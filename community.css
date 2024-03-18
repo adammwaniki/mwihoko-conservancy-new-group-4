@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container1 {
+    width: 100%;
+    height: 100vh;
+    /*there will be a colour gadient over this image
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(image-community/rinocerontes.jpg);
+    background-position: center;
+    background-size: cover;
+    to make some space around the sides of the webpage for all the content
+    */
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    z-index: -2;
+}
+body{
+    background-image: url(image-community/rinocerontes.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo-home {
+    width: 50px;
+    cursor: pointer;
+}
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    /*to make some space between the menu icon and the text since theyre on the same line*/
+    margin-left: 40px;
+}
+nav {
+    /*to put the logo on the right and the text on the left*/
+    flex: 1;
+    text-align: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    position: relative;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #c1b59f;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #c1b59f;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    transition: 0.5s;
+}
+nav ul li:hover:after {
+    width: 100%;
+}
+h1{
+    background-color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 3em;
+}
+h2{
+    text-align: center;
+    font-style: oblique;font-size: 2.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+p{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+    background-color: lightblue;
+}
+img{
+    grid-column: calc(2);
+    grid-row: calc(2);
+    float: calc(center);
+    
+}
+footer{
+    margin-top: 150px;
+    padding: 100px;
+    border: none;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(100, 120, 80);
+
+}
+.logo{
+    width: 80px;
+    height: 80px;
+}
+.footer{
+    text-decoration: none;
+    color: RGBa(222, 184, 135);
+    font-size: 18px;
+    
+    
+}
+.footer:hover{
+    color: white;
+}
+
+/*responsive styling*/
+@media screen and (max-width: 600px) {
+    footer{
+        flex-direction: column;
+        margin-top: 150px;
+    }
+}
+    .footer{
+        margin-bottom: 10px;
+    }
+    .hero-container{
+        width: 100%;
+    }
+    input, textarea{
+        width: 300px;
+    }
+    .button{
+        width: 70%;
+        margin-right: auto;
+    }
+    .grid-item{
+        display: block;
+    }
