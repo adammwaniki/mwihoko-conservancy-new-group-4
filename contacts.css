@@ -7,7 +7,7 @@ body{
     background-image: url('contacts-images/backheader.jpg');
     /*background-size: cover;
     background-repeat: no-repeat;*/
-    background-color: RGBa(222, 184, 135, 0.5);
+    background-color: rgba(222, 184, 135, 0.9);
     width: 100%;
 
 }
@@ -15,6 +15,7 @@ body{
     height: 12%;
     display: flex;
     align-items: center;
+    background-color: #D2B48C;
 }
 .logo-home {
     width: 50px;
@@ -39,7 +40,7 @@ nav ul li {
 }
 nav ul li a{
     text-decoration: none;
-    color: #c1b59f;
+    color: #006400;
     font-size: 15px;
     text-transform: uppercase;
 }
@@ -47,7 +48,7 @@ nav ul li::after {
     content: '';
     height: 3px;
     width: 0;
-    background: #c1b59f;
+    background: #006400;
     position: absolute;
     left: 0;
     top: 25px;
@@ -61,6 +62,7 @@ nav ul li:hover:after {
     text-align: center;
     background-color: RGBa(222, 184, 135, 0.9);
     padding: 10px;
+    margin-top: 100px;
     
 }
 .hook h2{
