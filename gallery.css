@@ -1,0 +1,90 @@
+ *{
+   margin: 0;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+
+ h1{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+ }
+
+ .container-gallery {
+    width: 100%;
+    height: 100vh;
+    /*there will be a colour gadient over this image*/
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(https://plus.unsplash.com/premium_photo-1661814294786-ddbf27b45956?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    /*to make some space around the sides of the webpage for all the content*/
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    z-index: -2;
+ }
+ .navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+ }
+
+ .logo-home {
+    width: 50px;
+    cursor: pointer;
+ }
+
+ .menu-icon {
+    width: 30px;
+    cursor: pointer;
+    /*to make some space between the menu icon and the text since theyre on the same line*/
+    margin-left: 40px;
+ }
+
+ nav {
+    /*to put the logo on the right and the text on the left*/
+    flex: 1;
+    text-align: right;
+ }
+ 
+ .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    position: relative;
+ }
+ .navbar ul li a{
+    text-decoration: none;
+    color: #c1b59f;
+    font-size: 15px;
+    text-transform: uppercase;
+ }
+ nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #c1b59f;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    transition: 0.5s;
+ }
+nav ul li:hover:after {
+    width: 100%;
+ }
+ .wild {
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    align-items: center;
+    justify-items: auto;
+ }
+
+ .wild img:hover{
+    transform: scale(0.7) rotate(-20deg);
+    border-radius: 20px;
+ }
